@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "49e75bc6-6c0c-492a-ab39-f6e005f01db6",
+		"name": "VolumeWebhookSampe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "226192"
+	},
+	"item": [
+		{
+			"name": "Webhook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{signature}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"paymentId\":\"3e3218ac-19e6-4233-b1e2-eaa1cb7d9c84\",\"merchantPaymentId\":null,\"paymentStatus\":\"COMPLETED\",\"errorDescription\":null,\"paymentRequest\":{\"amount\":1.20,\"currency\":\"GBP\",\"reference\":\"payment abc\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}:{{port}}/api/webhook",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhoo with a primitive Dto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{signature}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"paymentId\":\"3e3218ac-19e6-4233-b1e2-eaa1cb7d9c84\",\"merchantPaymentId\":null,\"paymentStatus\":\"COMPLETED\",\"errorDescription\":null,\"paymentRequest\":{\"amount\":1.20,\"currency\":\"GBP\",\"reference\":\"payment abc\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}:{{port}}/api/webhookDto",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"webhookDto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhoo with a complex Dto - FAILURE example",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{signature}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"paymentId\":\"3e3218ac-19e6-4233-b1e2-eaa1cb7d9c84\",\"merchantPaymentId\":null,\"paymentStatus\":\"COMPLETED\",\"errorDescription\":null,\"paymentRequest\":{\"amount\":1.20,\"currency\":\"GBP\",\"reference\":\"payment abc\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}:{{port}}/api/webhookComplexDto",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"webhookComplexDto"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://localhost",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "7142",
+			"type": "string"
+		},
+		{
+			"key": "signature",
+			"value": "SHA256withRSA j28z3fEZS0meeVXpfG40i3lHboI0wnmz+rFPRujSBI0IDR5f5FUT915YtsCso5WnW0yX5LZ26A1I78leHhwQT2TNjpz/bSVCbqlm/zLzsdA2X/lHycajY0A3CFPIoNhc+AQ5wUlDEDxX00xg1zl5tb0qRICcVRpUugWoOibO2rBxK03Skz9LAgKNIaHgGfPPgD29jQHyz2xc+KUFZrEPKvaLx1UJJcmVfV2mmHiS2/MhgNHDYX5TQZ+o781m4iBoaOQ1T6WTc8Zpv+DO8JExQIgUwxRxxnRBCiWBAkxchQvwThgAIqHOY72ZzJe0E65dsrANcU30HnMQNShsssw5tQ==",
+			"type": "string"
+		}
+	]
+}
