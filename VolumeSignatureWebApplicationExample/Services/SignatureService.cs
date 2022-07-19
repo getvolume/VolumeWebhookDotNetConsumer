@@ -32,7 +32,7 @@ public class SignatureService : ISignatureService
         return keyBytes;
     }
 
-    public bool ValidateSignature(byte[] data, string signatureHeader)
+    public bool VerifySignature(byte[] data, string signatureHeader)
     {
         var r = RSA.Create();
         r.ImportSubjectPublicKeyInfo(_volumePemBytes, out _);
@@ -43,9 +43,9 @@ public class SignatureService : ISignatureService
         return r.VerifyData(data, expectedSignatureBytes, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
     }
 
-    public bool ValidateSignature(string json, string signatureHeader)
+    public bool VerifySignature(string json, string signatureHeader)
     {
         var jsonBytes = Encoding.UTF8.GetBytes(json!);
-        return ValidateSignature(jsonBytes, signatureHeader);
+        return VerifySignature(jsonBytes, signatureHeader);
     }
 }

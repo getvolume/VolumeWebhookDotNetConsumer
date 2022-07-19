@@ -9,7 +9,7 @@
 		{
 			"name": "Webhook",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "Authorization",
@@ -43,7 +43,7 @@
 		{
 			"name": "Webhoo with a primitive Dto",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "Authorization",
@@ -77,7 +77,7 @@
 		{
 			"name": "Webhoo with a complex Dto - FAILURE example",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "Authorization",

@@ -2,6 +2,6 @@ namespace VolumeSignatureWebApplicationExample.Services;
 
 public interface ISignatureService
 {
-    bool ValidateSignature(byte[] data, string signatureHeader);
-    bool ValidateSignature(string json, string signatureHeader);
+    bool VerifySignature(byte[] data, string signatureHeader);
+    bool VerifySignature(string json, string signatureHeader);
 }
