@@ -19,7 +19,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"paymentId\":\"3e3218ac-19e6-4233-b1e2-eaa1cb7d9c84\",\"merchantPaymentId\":null,\"paymentStatus\":\"COMPLETED\",\"errorDescription\":null,\"paymentRequest\":{\"amount\":1.20,\"currency\":\"GBP\",\"reference\":\"payment abc\"}}",
+					"raw": "{\"paymentId\":\"3f2a2b69-6d42-4050-9c4f-7e8849bf683c\",\"merchantPaymentId\":\"806\",\"paymentStatus\":\"COMPLETED\",\"errorDescription\":null,\"paymentRequest\":{\"amount\":24.23,\"currency\":\"GBP\",\"reference\":\"payment-reference\"},\"paymentRefundData\":null,\"paymentMetadata\":{\"some-data\":\"some-value\"}}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -53,7 +53,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"paymentId\":\"3e3218ac-19e6-4233-b1e2-eaa1cb7d9c84\",\"merchantPaymentId\":null,\"paymentStatus\":\"COMPLETED\",\"errorDescription\":null,\"paymentRequest\":{\"amount\":1.20,\"currency\":\"GBP\",\"reference\":\"payment abc\"}}",
+					"raw": "{\"paymentId\":\"3f2a2b69-6d42-4050-9c4f-7e8849bf683c\",\"merchantPaymentId\":\"806\",\"paymentStatus\":\"COMPLETED\",\"errorDescription\":null,\"paymentRequest\":{\"amount\":24.23,\"currency\":\"GBP\",\"reference\":\"payment-reference\"},\"paymentRefundData\":null,\"paymentMetadata\":{\"some-data\":\"some-value\"}}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -142,7 +142,7 @@
 		},
 		{
 			"key": "signature",
-			"value": "SHA256withRSA j28z3fEZS0meeVXpfG40i3lHboI0wnmz+rFPRujSBI0IDR5f5FUT915YtsCso5WnW0yX5LZ26A1I78leHhwQT2TNjpz/bSVCbqlm/zLzsdA2X/lHycajY0A3CFPIoNhc+AQ5wUlDEDxX00xg1zl5tb0qRICcVRpUugWoOibO2rBxK03Skz9LAgKNIaHgGfPPgD29jQHyz2xc+KUFZrEPKvaLx1UJJcmVfV2mmHiS2/MhgNHDYX5TQZ+o781m4iBoaOQ1T6WTc8Zpv+DO8JExQIgUwxRxxnRBCiWBAkxchQvwThgAIqHOY72ZzJe0E65dsrANcU30HnMQNShsssw5tQ==",
+			"value": "SHA256withRSA hnHI6qoo7p37NwtBFj332TWC9UUHFiMlwgKsI2XV+L1xKbIK4Vp+3b3bczrdM+8bLXNTRMvJJJ+5zr5uBXBhl9enN3Sfq/4q3gmdq1pGd0Gz0YaRUZxhNG2tkVq7LGtKeeWzg5PxfCy7PeD3D71C+SnUYa7fwT+KzKyPCMqk+uWjLws6pKysinOzh3aYmVhaW9DhH6gZtV2LLGQFHUsqtYClzOkQRxDePhJU8kf8tu8FyTYxJgN4+CZ7vXrD162L0zrcsHXZX1VvVS0GbguHz/JHIFRzqu+o3QpHoidnU+reXPoCQOBV420NaWwVy3Op5o3rFSAZvSwjwAczoQRfnw==",
 			"type": "string"
 		}
 	]
